@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Menu";
+}
+
+
+<form action="/Pizza/Menu" method="POST">
+
+    <!-- Tipo -->
+    <div>
+            <div>
+                <label>Pizza Americana</label>
+                <img src="https://images.rappi.pe/products/88854-1553291782.png?d=200x200" width="150px" height="150px">
+                <input type="radio" name="tipo" id="Americana" value="1">
+            </div>
+                <br>
+            <div>
+                <label>Pizza Calabresa</label>
+                <img src="https://betos.com.ar/wp-content/uploads/2019/08/pizza-calabresa.png" width="150px" height="150px">
+            
+                <input type="radio" name="tipo" id="Calabresa" value="2">
+            </div>
+
+            <br>
+            <div>
+                <label>Pizza Napolitana</label>
+                <img src="https://www.archies.co/media/pomodoro.png" width="150px" height="150px">
+            
+                <input type="radio" name="tipo" id="Napolitana" value="3">
+            </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Tamanio -->
+    <div>
+        <select name="tamanio">
+            <option>Ecojer tamaño</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Mediana">Mediana</option>
+            <option value="Personal">Personal</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <!-- botones -->
+    <div>
+        <button type="submit">Ordenar</button>
+    </div>
+
+
+</form>
