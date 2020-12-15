@@ -9,14 +9,17 @@ namespace BuilderPatron.Models.BuilderConcreto
         {
             this._pizza.tamanio = tam;
         }
+
         public override void PasoPrepararMasa()
         {
             _pizza.masa = "Suave";
         }
+        
         public override void PasoAgregarSalsa()
         {
             _pizza.salsa="Dulce";
         }
+        
         public override void PasoPrepararRelleno()
         {
             _pizza.relleno = "Jamon + Queso";

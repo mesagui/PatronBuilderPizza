@@ -13,10 +13,12 @@ namespace BuilderPatron.Models.BuilderConcreto
         {
             _pizza.masa = "Suave";
         }
+
         public override void PasoAgregarSalsa()
         {
             _pizza.salsa = "Dulce";
         }
+
         public override void PasoPrepararRelleno()
         {
             _pizza.relleno= "Longaniza calabesa + Aceituna + Queso ";

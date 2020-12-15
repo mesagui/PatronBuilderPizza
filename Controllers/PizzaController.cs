@@ -17,7 +17,12 @@ namespace BuilderPatron.Controllers
         }
 
         public ActionResult Ordenes(){
-            return View(cnx.Pizzas.ToList());
+
+            var x = cnx.Pizzas.Where( a => a.idPizza == 1 )
+                               .Where( a => a.masa == "Suave")
+                               .ToList();
+
+            return View(x);
         }
 
         [HttpGet]
@@ -31,7 +36,7 @@ namespace BuilderPatron.Controllers
 
             var cocinero = new Cocinero();
             Pizza pizza = new Pizza();
-            // Clietne pide una pizza
+            // Cliente pide una pizza
             switch(tipo){
                 case 1:
                     cocinero.RecepcionarOrden(new PizzaAmericana(tamanio));
